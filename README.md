@@ -66,7 +66,6 @@ git pull origin main
 ## Project Structure
 - docs/notes.md: Small notes you can safely edit
 - docs/updates.md: Short updates you can commit and merge
-- docs/checklist.md: Mini tasks for practice
 - docs/conflicts.md: A safe space to practice conflict resolution
 
 ## Contributing
