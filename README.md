@@ -61,7 +61,6 @@ git pull origin main
 - Add a short note to [docs/notes.md](docs/notes.md).
 - Add a short entry to [docs/updates.md](docs/updates.md).
 - Improve a heading in [README.md](README.md).
-- Add a tiny improvement to [docs/checklist.md](docs/checklist.md).
 - Resolve a practice conflict in [docs/conflicts.md](docs/conflicts.md).
 
 ## Project Structure
