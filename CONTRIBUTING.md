@@ -20,3 +20,19 @@ Keep contributions small, focused, and easy to review. The point is to practice 
 ## Merging
 - Merge via the pull request.
 - Squash merge is fine for practice.
+
+## How to Write a Good Commit Message
+- Use the imperative mood ("Add feature" not "Added feature" or "Adds feature")
+- If applicable, use Conventional Commits format:
+  - `feat: add new button`
+  - `fix: correct typo in docs`
+  - `docs: update readme instructions`
+
+## Syncing Your Fork
+If you've been working on your fork for a while, you may need to sync it with the upstream repository before opening a PR:
+```bash
+git fetch upstream
+git checkout main
+git merge upstream/main
+git push origin main
+```

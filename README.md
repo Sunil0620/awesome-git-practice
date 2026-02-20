@@ -10,11 +10,14 @@ A clean, real-world style repository for practicing Git workflows such as branch
 - Keeping commit history tidy and meaningful
 
 ## Recommended Flow
-1. Fork this repository and clone your fork.
-2. Create a new branch for a small change.
-3. Make a commit with a clear message.
-4. Open a pull request with a clear description.
-5. I'll Merge the pull request — reviews; otherwise request a maintainer .
+1. **Fork** this repository (click the "Fork" button at the top right).
+2. **Clone** your fork to your local machine.
+3. Configure an upstream remote to keep your fork synced:
+   `git remote add upstream git@github.com:Sunil0620/awesome-git-practice.git`
+4. Create a **new branch** for a small change.
+5. Make a **commit** with a clear message (try pair programming with a Co-authored-by tag!).
+6. Push your branch and open a **pull request** with a clear description.
+7. I'll merge the pull request if there are no conflicts; otherwise request a maintainer for help!
 
 ## Step-by-Step Tutorial
 Use this walkthrough to practice a clean, realistic Git workflow end to end.
@@ -40,6 +43,13 @@ Add a short line and save the file.
 git status
 git add docs/updates.md
 git commit -m "docs: add update log entry"
+```
+
+#### Pair Programming Practice (Co-authoring)
+If you paired with someone on this change, give them credit by adding a `Co-authored-by` trailer to your commit message!
+
+```bash
+git commit -m "docs: add update log entry" -m "Co-authored-by: Their Name <their.email@example.com>"
 ```
 
 ### 4) Push and Open a Pull Request

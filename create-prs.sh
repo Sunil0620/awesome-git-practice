@@ -7,8 +7,12 @@ for i in {1..20}; do
   git checkout main
   git pull origin main
   git checkout -b "coauthor-feature-$i"
-  echo "# Coauthor Feature $i" >> "coauthor-feature-$i.md"
-  git add "coauthor-feature-$i.md"
+  
+  # Ensure the directory exists
+  mkdir -p docs/coauthor-features
+  
+  echo "# Coauthor Feature $i" >> "docs/coauthor-features/coauthor-feature-$i.md"
+  git add "docs/coauthor-features/coauthor-feature-$i.md"
   git commit -m "test: add coauthor feature $i" \
     -m "Co-authored-by: Sunil0620 <sunilsaini5652@gmail.com>"
   
