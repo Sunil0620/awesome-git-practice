@@ -10,7 +10,7 @@ A clean, real-world style repository for practicing Git workflows such as branch
 - Keeping commit history tidy and meaningful
 
 ## Recommended Flow
-1. **Fork** this repository (click the "Fork" button at the top right).
+1. **Fork** this repository ([click here to fork](https://github.com/Sunil0620/awesome-git-practice/fork) or click the "Fork" button at the top right).
 2. **Clone** your fork to your local machine.
 3. Configure an upstream remote to keep your fork synced:
    `git remote add upstream git@github.com:Sunil0620/awesome-git-practice.git`
@@ -31,25 +31,22 @@ cd awesome-git-practice
 git checkout -b feature/my-change
 ```
 
-### 2) Make a Small Change 
-Pick a safe file to edit, for example:
-- docs/updates.md
-- docs/notes.md
-
-Add a short line and save the file.
+### 2) Make a Small Change
+Add your name and GitHub link to `docs/add-your-name.md`.
+Open the file, add a new row to the table at the bottom, and save the file.
 
 ### 3) Commit with a Clear Message
 ```bash
 git status
-git add docs/updates.md
-git commit -m "docs: add update log entry"
+git add docs/add-your-name.md
+git commit -m "docs: add <your-name> to contributors list"
 ```
 
 #### Pair Programming Practice (Co-authoring)
 If you paired with someone on this change, give them credit by adding a `Co-authored-by` trailer to your commit message!
 
 ```bash
-git commit -m "docs: add update log entry" -m "Co-authored-by: Their Name <their.email@example.com>"
+git commit -m "docs: add <your-name> to contributors list" -m "Co-authored-by: Their Name <their.email@example.com>"
 ```
 
 ### 4) Push and Open a Pull Request
@@ -68,15 +65,14 @@ git pull origin main
 ```
 
 ## Suggested Exercises
-- Add a short note to [docs/notes.md](docs/notes.md).
-- Add a short entry to [docs/updates.md](docs/updates.md).
-- Improve a heading in [README.md](README.md).
+- Add yourself to the [docs/add-your-name.md](docs/add-your-name.md) list.
+- Improve a heading or fix a typo in [README.md](README.md).
 - Resolve a practice conflict in [docs/conflicts.md](docs/conflicts.md).
 
 ## Project Structure
-- docs/notes.md: Small notes you can safely edit
-- docs/updates.md: Short updates you can commit and merge
-- docs/conflicts.md: A safe space to practice conflict resolution
+- docs/add-your-name.md: The primary file you can safely edit to practice git changes.
+- docs/conflicts.md: A safe space to practice conflict resolution.
+- scripts/: Maintainer scripts, such as `create-prs.sh`, kept out of the way to avoid confusion.
 
 ## Contributing
 Please follow [CONTRIBUTING.md](CONTRIBUTING.md) for conventions.
